@@ -28,7 +28,7 @@ public class Interest {
 		System.out.printf("Simple Interest Rate Double: %.2f%n",SI);		
 		
 		BigDecimal SIbg = SimpleInterestBigDec(principal,rate,time);
-		System.out.printf("Simple Interest Rate BigDecimal: %n"+SIbg);		
+		System.out.printf("Simple Interest Rate BigDecimal: %f%n",SIbg);		
 	}
 	
 	public Interest(double principalData, double rateData, int timeData, int nData) {
@@ -47,10 +47,10 @@ public class Interest {
 		System.out.println("\nCompounding periods/yr: "+n);
 		
 		double CI = CompoundInterest(principal,rate,time,n);
-		System.out.printf("Compound Interest Rate Double: %.2f",CI);
+		System.out.printf("Compound Interest Rate Double: %.2f%n",CI);
 		
 		BigDecimal CIbg = CompoundInterestBigDec(principal,rate,time,n);
-		System.out.println("Compound Interest Rate Big Decimal: "+CIbg);
+		System.out.printf("Compound Interest Rate Big Decimal: %f%n",CIbg);
 	}
 	
 	// method for calculating SI = PxRxT/100;
